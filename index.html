@@ -63,10 +63,10 @@
     </header>
     <main>
       <!-- Hero section -->
-      <section class="hero-section overlay">
+      <section class="hero-section overlay-hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="btn-hero" type="button">Замовити послугу</button>
+          <button class="btn-hero" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <!-- Benefits section -->
@@ -136,6 +136,11 @@
                 width="370"
                 height="294"
               />
+              <div class="overlay">
+                <p class="overlay-text">
+                  Десктопні додатки
+                </p>
+              </div>
             </li>
             <li class="works-item">
               <img
@@ -144,6 +149,11 @@
                 width="370"
                 height="294"
               />
+              <div class="overlay">
+                <p class="overlay-text">
+                  Мобільні додатки
+                </p>
+              </div>
             </li>
             <li class="works-item">
               <img
@@ -152,6 +162,11 @@
                 width="370"
                 height="294"
               />
+              <div class="overlay">
+                <p class="overlay-text">
+                  Дизайнерські рішення
+                </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -570,5 +585,17 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal Window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal" data-modal-window>
+        <button class="modal-btn"data-modal-close>
+          <svg class="modal-icon" width="11" height="11">
+            <use href="./img/icons.svg.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+   <script src="./js/modal.js"></script>
   </body>
 </html>
